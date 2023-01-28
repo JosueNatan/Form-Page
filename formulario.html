@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Cadastro de Levitas</h1>
+        <p id="subtitulo">Complete suas informações</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="Nome"><strong>Nome</strong> </label>
+                <input type="text" name="none" id="none" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong> </label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label for=""><strong>Qual instrumento você desenvolve?</strong> </label>
+            <input type="radio" name="devweb" value="bateria" checked> Bateria
+            <label for="">
+                <input type="radio" name="devweb" value="guitarra"> Guitarra
+            </label>
+            <label for="">
+                <input type="radio" name="devweb" value="microfone"> Microfone
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="Experiência">Experiência</label>
+            <select name="" id="senioridade">
+                <option selected disabled value="">Selecione</option>
+                <option value="">Aprendiz</option>
+                <option value="">Intermediário</option>
+                <option value="">Avançado</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label for=""><strong>Selecione os intrumentos que utiliza</strong> </label><br><br>
+                <input type="checkbox" id="instrumento1" name="instrumento1" value="bateria">
+                <label for="">Bateria</label> 
+                <input type="checkbox" id="instrumento2" name="instrumento2" value="guitarra">
+                <label for="">Guitarra</label>
+                <input type="checkbox" id="instrumento3" name="instrumento3" value="Microfone">
+                <label for="">Microfone</label>
+                <input type="checkbox" id="instrumento4" name="instrumento4" value="Baixo">
+                <label for="">Baixo</label>
+                <input type="checkbox" id="instrumento5" name="instrumento5" value="Teclado">
+                <label for="">Teclado</label>
+                <input type="checkbox" id="instrumento6" name="instrumento6" value="Violino">
+                <label for="">Violino</label>
+                <input type="checkbox" id="instrumento" name="instrumento" value="violão">
+                <label for="">Violão</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label for=""><strong>Conte um pouco do seu testemunho</strong> </label>
+            <textarea name="testemunho" id="testemunho" cols="30" rows="6" style="width:26em;"></textarea>
+        </div>
+
+        <button class="botao" type="submit">Concluído</button>
+    </form>
+</body>
+</html>
